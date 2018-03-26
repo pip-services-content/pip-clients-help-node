@@ -78,7 +78,7 @@ export class HelpDirectClientV1 extends DirectClient<any> implements IHelpClient
     public getRandomArticle(correlationId: string, filter: FilterParams,
         callback: (err: any, article: HelpArticleV1) => void): void {
         let timing = this.instrument(correlationId, 'help.get_random_article');
-        this._controller.getArticles(correlationId, filter, (err, article) => {
+        this._controller.getRandomArticle(correlationId, filter, (err, article) => {
             timing.endTiming();
             callback(err, article);
         });

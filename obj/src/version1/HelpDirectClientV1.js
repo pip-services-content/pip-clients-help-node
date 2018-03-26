@@ -55,7 +55,7 @@ class HelpDirectClientV1 extends pip_services_net_node_1.DirectClient {
     }
     getRandomArticle(correlationId, filter, callback) {
         let timing = this.instrument(correlationId, 'help.get_random_article');
-        this._controller.getArticles(correlationId, filter, (err, article) => {
+        this._controller.getRandomArticle(correlationId, filter, (err, article) => {
             timing.endTiming();
             callback(err, article);
         });
