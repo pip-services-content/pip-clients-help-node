@@ -12,7 +12,7 @@ import { IHelpClientV1 } from './IHelpClientV1';
 export class HelpHttpClientV1 extends CommandableHttpClient implements IHelpClientV1 {
 
     constructor(config?: any) {
-        super('help');
+        super('v1/help');
 
         if (config != null)
             this.configure(ConfigParams.fromValue(config));
