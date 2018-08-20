@@ -4,7 +4,7 @@ import { Descriptor } from 'pip-services-commons-node';
 import { FilterParams } from 'pip-services-commons-node';
 import { PagingParams} from 'pip-services-commons-node';
 import { DataPage } from 'pip-services-commons-node';
-import { DirectClient } from 'pip-services-net-node';
+import { DirectClient } from 'pip-services-rpc-node';
 
 import { HelpTopicV1 } from './HelpTopicV1';
 import { HelpArticleV1 } from './HelpArticleV1';
