@@ -2,7 +2,7 @@ let _ = require('lodash');
 let async = require('async');
 let assert = require('chai').assert;
 
-import { MultiString } from 'pip-services-commons-node';
+import { MultiString } from 'pip-services3-commons-node';
 
 import { IHelpClientV1 } from '../../src/version1/IHelpClientV1';
 import { HelpTopicV1 } from '../../src/version1/HelpTopicV1';
@@ -11,13 +11,13 @@ import { HelpArticleV1 } from '../../src/version1/HelpArticleV1';
 let HELP_TOPIC1 = <HelpTopicV1>{
     id: '1',
     app: 'Test App 1',
-    title: { en: 'Main topic' }
+    title: new MultiString({ en: 'Main topic' })
 };
 let HELP_TOPIC2 = <HelpTopicV1>{
     id: '2',
     parent_id: '1',
     app: 'Test App 1',
-    title: { en: 'Subtopic 1' },
+    title: new MultiString({ en: 'Subtopic 1' }),
     popular: true
 };
 
