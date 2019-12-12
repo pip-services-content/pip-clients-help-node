@@ -13,9 +13,9 @@ class HelpClientFactory extends pip_services3_components_node_1.Factory {
         this.registerAsType(HelpClientFactory.LambdaClientV1Descriptor, HelpLambdaClientV1_1.HelpLambdaClientV1);
     }
 }
+exports.HelpClientFactory = HelpClientFactory;
 HelpClientFactory.Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-help', 'factory', 'default', 'default', '1.0');
 HelpClientFactory.DirectClientV1Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-help', 'client', 'direct', 'default', '1.0');
 HelpClientFactory.HttpClientV1Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-help', 'client', 'http', 'default', '1.0');
 HelpClientFactory.LambdaClientV1Descriptor = new pip_services3_commons_node_1.Descriptor('pip-services-help', 'client', 'lambda', 'default', '1.0');
-exports.HelpClientFactory = HelpClientFactory;
 //# sourceMappingURL=HelpClientFactory.js.map

@@ -1,6 +1,6 @@
 {
     "name": "pip-clients-help-node",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "author": "Conceptual Vision Consulting LLC",
     "description": "Node.js client sdk for pip-services-help microservice",
     "contributors": [
@@ -48,13 +48,9 @@
         "@types/async": "^2.0.0",
         "@types/chai": "*",
         "@types/mocha": "*",
-        "@types/mongodb": "^2.1.38",
-        "@types/mongoose": "^4.7.4",
-        "seneca": "^3.3.0",
         "restify": "^4.3.0",
         "chai": "*",
         "mocha": "*",
-        "aws-sdk": "*",
-        "pip-services-help-node": "git+ssh://git@github.com:pip-services-content/pip-services-help-node.git"
+        "pip-services-help-node": "^1.1.0"
     }
 }
